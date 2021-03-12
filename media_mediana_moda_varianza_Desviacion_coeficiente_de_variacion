@@ -1,0 +1,146 @@
+\title{Medidas de tendencia central y medidas de dispersión - Agrupados}
+
+\author[J. Gracia]{Profesor: Jhon Gracia}
+\date {Marzo 13 de 2021}
+
+\begin{document}
+
+\titleslide
+
+% You typically want to include "fragile" on every slide
+\begin{frame}[fragile]
+\frametitle{Se reescribieron las formulas de tendencia central}
+
+
+\begin{block}{Fórmula de la media}
+Fórmula de la media o promedio para datos agrupados. 
+\end{block}
+
+\begin{equation}
+    \bar{X} = \frac{\sum X_{i} * f_{i}}{n}
+\end{equation}
+\begin{enumerate}
+    \item $X_i$ Son todos los valores de la marca de clases. 
+    \item $f_i$ Son los valores de la frecuencia relativa
+    \item $n$ Es la cantidad de datos 
+    \item $\sum$ Indica sumatoria de los datos, después de multiplicarlos entre sí. 
+\end{enumerate}
+\begin{itemize}
+    \item Cuando es la media de una población, el promedio suele simbolizarse como $\mu$. 
+\end{itemize}
+
+
+\end{frame}
+
+\section{Mediana y Moda para datos agrupados}
+
+
+
+\begin{frame}[fragile]{Mediana para datos agrupados}
+
+Primero debemos encontrar el intervalos donde se halla la mediana. 
+La formula para hallar el intervalo es: 
+\begin{equation}
+    p = \frac{n}{2}
+\end{equation}
+
+\s Fórmula de la mediana: 
+\begin{equation}
+   Me = L_{inf} + \frac{\frac{n}{2}-N_{i-1}}{n_{i}} * C_i
+\end{equation}
+\begin{enumerate}
+    \item $N_{i-1}$ Es la frecuencia adsoluta acumulada del intervalo anterio al intervalo donde está la mediana. 
+    \item $C_i$ Es la amplitud del intervalo
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Moda para datos agrupados}
+Primero debemos encontrar el intervalo donde se halla la moda. 
+La formula para hallar el intervalo es: 
+\begin{equation}
+    p = \frac{n}{2}
+\end{equation}
+
+\s La formula para hallar la moda: 
+\begin{equation}
+    Mo = L_{inf} +
+    \frac{n_{i+1}}{n_{i-1}+n_{i+1}} * C_i
+\end{equation}
+\begin{enumerate}
+    \item $n_{i-1}$ y $n_{i+1}$ Son las frecuencias adsolutas anterior y siguiente al intervalo donde está la moda.
+    \item $C_i$ Es la amplitud del intervalo
+\end{enumerate}
+
+\end{frame}
+
+\section{Medidas de dispersión}
+
+\begin{frame}[fragile]{¿Qué son las medidas de dispersión?}
+Las medidas de dispersión, como su nombre lo indica, miden el grado de dispersión de los datos. Es decir, la separación de un dato con otro, que comunmente se llama volatilidad. 
+
+\textbf{Varianza} Es el promedio de las diferencias al cuadrado entre los valores observados y los valores calculados. 
+
+\textbf{Desviación estandar} Es el promedio de las diferencias entre el valor observado y el valor calculado. \\
+\textbf{Coeficiente de variación} Nos indica el grado de volatilidad de los datos, tomando como base el promedio $\bar{X}$. 
+\end{frame}
+
+\section{Fórmulas de las medidas de dispersión}
+
+\begin{frame}[fragile]{Medidas de dispersión. Explicación gráfica}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{descarga.png}
+    \caption{Datos observados y datos calculados}
+    \label{fig:Gráfico de dispersión}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Varianza}
+La formula de la varianza para datos agrupados es: 
+
+\begin{equation}
+    S^{2} = \sigma ^{2} =  \frac{\sum (X_{i} - \bar{X})^{2} * f{i}}{n}
+\end{equation}
+\begin{enumerate}
+    \item $X_i$ Son los datos de la marca de clases.
+    \item $\bar{X}$ Es el promedio de los datos agrupados.
+    \item $f_i$ Es la frecuencia relativa. 
+    \item $n$ Cantidad de datos. 
+\end{enumerate}
+\begin{itemize}
+    \item Se utiliza la notación $S^{2}$ cuando es la varianza de la muestra; y cuando es la varianza de la población se usa $\sigma^{2}$ .
+\end{itemize}
+\end{frame}
+
+\section{Desviación estandar}
+
+\begin{frame}[fragile]{Desviación Estandar para datos agrupados}
+Para obtener la deviación estandar se ingresa el resultado de la varianza dentro de raíz cuadrada, así: 
+\begin{equation}
+    S = \sigma =  \sqrt{\frac{\sum (X_{i} - \bar{X})^{2} * f{i}}{n}} = \sqrt{\sigma^{2}} = \sqrt{S^{2}} 
+\end{equation}
+\begin{enumerate}
+    \item $X_i$ Son los datos de la marca de clases.
+    \item $\bar{X}$ Es el promedio de los datos.
+    \item $f_i$ Es la frecuencia relativa. 
+    \item $n$ Cantidad de datos. 
+\end{enumerate}
+\end{frame}
+
+\section{Coeficiente de variación $C.V.$}
+
+\begin{frame}{Formula del coeficiente de variación $C.V.$}
+Para obtener el coeficiente de variación, entonces: 
+
+\begin{equation}
+    C.V. = \frac{\sigma}{\bar{X}}
+\end{equation}
+Donde, 
+\begin{enumerate}
+    \item $\sigma$ Es la desviación estandar. 
+    \item $\bar{X}$ Promedio de los datos agrupados.
+\end{enumerate}
+\end{frame}
+
+\end{document}
